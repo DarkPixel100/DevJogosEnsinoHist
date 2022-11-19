@@ -146,6 +146,7 @@ public class CharBaseMov : MonoBehaviour
 
     public void Jump()
     {
+        GetComponent<PlayerParticles>().CreateDust();
         jumpPress = false;
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.AddForce(new Vector2(0, jumpForce * 100));

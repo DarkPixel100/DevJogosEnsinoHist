@@ -29,6 +29,7 @@ public class HealthMeterKeeper : MonoBehaviour
             if (index < playerHealth)
             {
                 child.SetActive(true);
+                child.GetComponent<Animator>().Play("HeartBlink");
                 index++;
             }
             else

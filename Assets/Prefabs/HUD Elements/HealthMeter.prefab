@@ -53,8 +53,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HeartPrefab: {fileID: 6069916824228068406, guid: ba18e18a86b85054a9095cb119459cd0, type: 3}
+  player: {fileID: 1858321033050649061, guid: 9005015d425cbaf48b943047c1a5f773, type: 3}
   Children: []
-  player: {fileID: 1667104330302212322, guid: f35b208076bd7454b9c6d956b9d58b19, type: 3}
 --- !u!1001 &6915757123895001239
 PrefabInstance:
   m_ObjectHideFlags: 0
