@@ -40,6 +40,14 @@ public class SceneManage : MonoBehaviour
                 PlayerPrefs.SetString("CurrentLevel", "Level5");
                 SceneManager.LoadScene("Level5");
                 break;
+            case "Level6":
+                PlayerPrefs.SetString("CurrentLevel", "Level6");
+                SceneManager.LoadScene("Level5");
+                break;
+            case "Level7":
+                PlayerPrefs.SetString("CurrentLevel", "Level7");
+                SceneManager.LoadScene("Level5");
+                break;
             case "NextLevel":
                 int nextIndex = SceneManager.GetActiveScene().buildIndex + 1;
                 string path = SceneUtility.GetScenePathByBuildIndex(nextIndex);

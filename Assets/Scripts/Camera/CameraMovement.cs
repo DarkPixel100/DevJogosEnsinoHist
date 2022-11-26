@@ -22,6 +22,8 @@ public class CameraMovement : MonoBehaviour
     private float holdDownStart;
     private float holdDownDuration;
 
+    public float levelLength;
+
     void Start()
     {
         player = GameObject.Find("Player");
@@ -52,7 +54,7 @@ public class CameraMovement : MonoBehaviour
     {
         if (followPlayer)
         {
-            transform.position = Vector3.Lerp(transform.position, new Vector3(player.transform.position.x, Mathf.Max(player.transform.position.y + baseCamHeight, 0), -10f) + moveOffset, moveSpeed * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, new Vector3(Mathf.Min(Mathf.Max(0, player.transform.position.x), levelLength), Mathf.Max(player.transform.position.y + baseCamHeight, .2f), -10f) + moveOffset, moveSpeed * Time.deltaTime);
         }
     }
 }

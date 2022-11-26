@@ -28,6 +28,6 @@ public class Collect : MonoBehaviour
     IEnumerator pickupDelay (float t)
     {
         yield return new WaitForSeconds(t);
-        sceneManager.GetComponent<SceneManage>().ChangeScene("Menu"); //Normalmente vai ser "NextLevel"
+        sceneManager.GetComponent<SceneManage>().ChangeScene("NextLevel");
     }
 }
