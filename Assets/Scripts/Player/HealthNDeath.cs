@@ -17,6 +17,7 @@ public class HealthNDeath : MonoBehaviour
 
     void Die()
     {
+        gameObject.GetComponent<CharBaseMov>().enabled = false;
         gameObject.GetComponent<Rigidbody2D>().simulated = false;
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
         gameObject.GetComponent<SpriteRenderer>().enabled = false;

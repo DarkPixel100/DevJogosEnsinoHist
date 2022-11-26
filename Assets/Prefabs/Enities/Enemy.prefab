@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7971688671708261822}
   - component: {fileID: 7971688671708261823}
   - component: {fileID: 7971688671708261821}
+  - component: {fileID: 8482931216537525921}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1726700275
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: df045634cb1e74e4d8ba0ed69716b95e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -167,3 +168,23 @@ MonoBehaviour:
   throwInterval: 3
   throwVel: 15
   projectilePref: {fileID: 8421493592022777146, guid: ba76b90843dd52e409f0ec2cd9754610, type: 3}
+--- !u!95 &8482931216537525921
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7971688671708261819}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3918ac311ebd3d840900e51c4ab3ab38, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
