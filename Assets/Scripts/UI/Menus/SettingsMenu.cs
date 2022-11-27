@@ -46,5 +46,6 @@ public class SettingsMenu : MonoBehaviour
     {
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+        if(GameObject.Find("Player")) GameObject.Find("Main Camera").GetComponent<CameraMovement>().CamFollow();
     }
 }
