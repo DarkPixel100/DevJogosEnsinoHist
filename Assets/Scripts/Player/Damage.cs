@@ -31,6 +31,7 @@ public class Damage : MonoBehaviour
             {
                 GetComponent<HealthNDeath>().health -= 1;
                 canBeHit = false;
+                GetComponent<AudioPlayer>().PlayAudio("hit");
                 StartCoroutine(hitAllowTimer(hittableDelay));
                 healthMeter.GetComponent<HealthMeterKeeper>().UpdateHealth(GetComponent<HealthNDeath>().health);
                 rb.simulated = false;

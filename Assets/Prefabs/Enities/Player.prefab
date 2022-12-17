@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 8277863468383607778}
   - component: {fileID: 1858321033050649068}
   - component: {fileID: 8666475681019313738}
+  - component: {fileID: 4227177748466407081}
   - component: {fileID: 1651894494997209210}
   m_Layer: 0
   m_Name: Player
@@ -42,7 +43,7 @@ Transform:
   m_Children:
   - {fileID: 1001425377954877808}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1858321033050649062
 SpriteRenderer:
@@ -300,6 +301,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pSystem: {fileID: 5209690793912075333}
+--- !u!114 &4227177748466407081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858321033050649061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6134ca233d1a524d9d93d26f0d4f727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jump: {fileID: 8300000, guid: 4f859ced522613a42b23594aa3e83f78, type: 3}
+  hit: {fileID: 8300000, guid: a70b206941e3f1944b4bd24238246fdb, type: 3}
 --- !u!82 &1651894494997209210
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1067,8 +1082,8 @@ ParticleSystem:
     radiusThickness: 1
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 0.8, y: 0.5, z: 0}
+    m_Rotation: {x: 0, y: 180, z: 0}
+    m_Scale: {x: 0.8, y: 0.5, z: 0.01}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -5231,7 +5246,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

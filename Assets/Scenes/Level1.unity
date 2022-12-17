@@ -960,8 +960,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -202319247
-  m_SortingLayer: 3
+  m_SortingLayerID: 1009338423
+  m_SortingLayer: 6
   m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -2061,6 +2061,25 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &342941752 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1858321033050649061, guid: 9005015d425cbaf48b943047c1a5f773, type: 3}
+  m_PrefabInstance: {fileID: 496281285}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &342941766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342941752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6134ca233d1a524d9d93d26f0d4f727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jump: {fileID: 8300000, guid: 4f859ced522613a42b23594aa3e83f78, type: 3}
+  hit: {fileID: 8300000, guid: a70b206941e3f1944b4bd24238246fdb, type: 3}
 --- !u!1001 &415247391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2266,6 +2285,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1651894494997209210, guid: 9005015d425cbaf48b943047c1a5f773, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1858321033050649061, guid: 9005015d425cbaf48b943047c1a5f773, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2317,7 +2340,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1858321033050649061, guid: 9005015d425cbaf48b943047c1a5f773, type: 3}
+      insertIndex: 12
+      addedObject: {fileID: 342941766}
   m_SourcePrefab: {fileID: 100100000, guid: 9005015d425cbaf48b943047c1a5f773, type: 3}
 --- !u!20 &519420031 stripped
 Camera:

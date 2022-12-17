@@ -47,7 +47,7 @@ TagManager:
   - name: Foreground
     uniqueID: 3110747229
     locked: 0
-  - name: Map
+  - name: Map_Walkable
     uniqueID: 4092648049
     locked: 0
   - name: Objects
@@ -55,4 +55,7 @@ TagManager:
     locked: 0
   - name: Entities
     uniqueID: 1726700275
+    locked: 0
+  - name: Map_Translucent
+    uniqueID: 1009338423
     locked: 0
