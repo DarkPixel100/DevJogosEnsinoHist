@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f636746c0e29a9d489d825e5ca6f86ab
+guid: ffbc75c5f3c933d428c29a0cb3a96376
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -25,7 +25,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -115,11 +115,23 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pedra_0
+      name: Madeira_0
       rect:
         serializedVersion: 2
         x: 0
@@ -133,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a41338c27295e6440918e50023fca1a0
-      internalID: 399768911
+      spriteID: f63902e94a5239f448bbee6a9b004ba4
+      internalID: -1761727126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pedra_1
+      name: Madeira_1
       rect:
         serializedVersion: 2
         x: 16
@@ -154,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b14f0e655c9bf404dbeaeb7c953a725b
-      internalID: -1790193670
+      spriteID: 32dc3bd41497c7b4fac269e5b227eb90
+      internalID: -1808643642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pedra_2
+      name: Madeira_2
       rect:
         serializedVersion: 2
         x: 32
@@ -175,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c48ee6725aaa4fa4aa0e09053a7f1e43
-      internalID: -2043374880
+      spriteID: 06794af7031d4e8468904d528abb366d
+      internalID: 1199211702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pedra_3
+      name: Madeira_3
       rect:
         serializedVersion: 2
         x: 48
@@ -196,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a68a209115ead64785e110c97c38d3f
-      internalID: -1817129801
+      spriteID: 1bc55269abc5ce440baed44da14ab774
+      internalID: -1672736075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pedra_4
+      name: Madeira_4
       rect:
         serializedVersion: 2
         x: 64
@@ -217,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4af4146ce6fbbcc4d8acbc8123e5beb3
-      internalID: -1625412671
+      spriteID: ed3dd0de0850e5d4395f2dc3694ed6d9
+      internalID: -1289791505
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pedra_5
+      name: Madeira_5
       rect:
         serializedVersion: 2
         x: 80
@@ -238,8 +250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e69093013addbe4ba7f433a56d5ddd3
-      internalID: -1032800706
+      spriteID: c1d8e1ae5c3d31448a14bcaa4b0d5f6c
+      internalID: 1526437293
       vertices: []
       indices: 
       edges: []
@@ -255,13 +267,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Pedra_1: -1790193670
-      Pedra_3: -1817129801
-      Pedra_2: -2043374880
-      Pedra_0: 399768911
-      Pedra_5: -1032800706
-      Pedra_4: -1625412671
-  spritePackingTag: 
+      Madeira_1: -1808643642
+      Madeira_5: 1526437293
+      Madeira_0: -1761727126
+      Madeira_4: -1289791505
+      Madeira_2: 1199211702
+      Madeira_3: -1672736075
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
   assetBundleName: 
