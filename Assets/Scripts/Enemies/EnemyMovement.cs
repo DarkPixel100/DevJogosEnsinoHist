@@ -50,6 +50,8 @@ public class EnemyMovement : MonoBehaviour
         }
         if (alternatingWalk)
         {
+            Destroy(GetComponent<ThrowAttack>());
+            GetComponent<Animator>().SetBool("ShouldWalk", true);
             if (ShouldTurn())
             {
                 lookDir *= -1;
@@ -57,6 +59,7 @@ public class EnemyMovement : MonoBehaviour
         }
         else
         {
+            GetComponent<Animator>().SetBool("ShouldWalk", false);
             lookDir = Mathf.RoundToInt((player.transform.position.x - transform.position.x) / Mathf.Abs(player.transform.position.x - transform.position.x));
         }
     }
