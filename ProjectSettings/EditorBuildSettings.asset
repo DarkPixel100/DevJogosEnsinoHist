@@ -37,19 +37,19 @@ EditorBuildSettings:
     guid: 3da573a660f5c914fac2af6b3a486eb3
   - enabled: 1
     path: Assets/Scenes/Level5.unity
-    guid: efb96a44c19f6254f85c73df8bbacb06
+    guid: e84005c37e1c69f44843209bb4b2a30f
   - enabled: 1
     path: Assets/Scenes/Cutscene6.unity
     guid: d774f4ed2c5208546a5acbdbc860cd5a
   - enabled: 1
     path: Assets/Scenes/Level6.unity
-    guid: b50412e3a6646bd45a722b4c119a7c79
+    guid: acfad332cc11a8549a30d375ff8b23bf
   - enabled: 1
     path: Assets/Scenes/Cutscene7.unity
     guid: a840aad4da6f79a4c8441aa7680425c6
   - enabled: 1
     path: Assets/Scenes/Level7.unity
-    guid: cc874821663c4f3448fa4c908e32e52b
+    guid: 552958ccb82726e409f578e74f401fe8
   - enabled: 1
     path: Assets/Scenes/CutsceneFinal.unity
     guid: b815875b0ff282040b209cfc8ef9a48f
