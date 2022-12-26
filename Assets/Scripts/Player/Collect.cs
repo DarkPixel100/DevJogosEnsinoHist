@@ -5,8 +5,15 @@ using UnityEngine;
 public class Collect : MonoBehaviour
 {
     [SerializeField] private LayerMask collectableLayer;
-    
+
     public GameObject sceneManager;
+
+    private GameObject HealthMeter;
+
+    void Start()
+    {
+        HealthMeter = GameObject.Find("HealthMeter");
+    }
 
     private void OnTriggerEnter2D(Collider2D collectable)
     {
@@ -14,8 +21,13 @@ public class Collect : MonoBehaviour
         {
             switch (collectable.gameObject.name)
             {
-                case "Heart":
-                    if (gameObject.GetComponent<HealthNDeath>().health < 3) gameObject.GetComponent<HealthNDeath>().health++;
+                case "HealthHeart":
+                    if (gameObject.GetComponent<HealthNDeath>().health < 3)
+                    {
+                        gameObject.GetComponent<HealthNDeath>().health++;
+                        HealthMeter.GetComponent<HealthMeterKeeper>().UpdateHealth(gameObject.GetComponent<HealthNDeath>().health);
+
+                    }
                     break;
                 case "Objective":
                     StartCoroutine(pickupDelay(2f));
@@ -25,7 +37,7 @@ public class Collect : MonoBehaviour
         }
     }
 
-    IEnumerator pickupDelay (float t)
+    IEnumerator pickupDelay(float t)
     {
         yield return new WaitForSeconds(t);
         sceneManager.GetComponent<SceneManage>().ChangeScene("NextLevel");

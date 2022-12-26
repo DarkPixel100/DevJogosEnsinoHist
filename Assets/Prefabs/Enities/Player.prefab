@@ -45,7 +45,7 @@ Transform:
   m_Children:
   - {fileID: 1001425377954877808}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1858321033050649062
 SpriteRenderer:
@@ -207,6 +207,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   walkSpeed: 10
+  inputListener: {fileID: 2818796193423614660, guid: 71f227fec906a534ba235ef87c3e8a90, type: 3}
   jumpPress: 0
   jumpRelease: 0
   jumpForce: 8.8
@@ -473,7 +474,7 @@ MonoBehaviour:
   - {x: 0.3125, y: -1, z: 0}
   m_ShapePathHash: -1000367587
   m_Mesh: {fileID: 0}
-  m_InstanceId: -295840
+  m_InstanceId: 78274
 --- !u!114 &2120455007
 MonoBehaviour:
   m_ObjectHideFlags: 0

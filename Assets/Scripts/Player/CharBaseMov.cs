@@ -17,7 +17,7 @@ public class CharBaseMov : MonoBehaviour
     private float walkDirection;
 
     // INPUT VARIABLES
-    private GameObject inputListener;
+    public GameObject inputListener;
     private string jumpKey;
 
     // ANIMATION VARIABLES
@@ -39,7 +39,6 @@ public class CharBaseMov : MonoBehaviour
 
     void Start()
     {
-        inputListener = GameObject.Find("Input Listener");
         jumpKey = inputListener.GetComponent<buttonInputs>().Jump;
 
         rb = GetComponent<Rigidbody2D>();
