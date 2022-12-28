@@ -7,6 +7,9 @@ public class AudioPlayer : MonoBehaviour
     private AudioSource source;
     public AudioClip jump;
     public AudioClip hit;
+
+    public AudioClip collectHealth;
+    public AudioClip collectObjective;
     void Start()
     {
         source = GetComponent<AudioSource>();
@@ -21,6 +24,12 @@ public class AudioPlayer : MonoBehaviour
                 break;
             case "hit":
                 source.clip = hit;
+                break;
+            case "collectHealth":
+                source.clip = collectHealth;
+                break;
+            case "collectObjective":
+                source.clip = collectObjective;
                 break;
         }
         source.Play();
