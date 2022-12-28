@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 1858321033050649068}
   - component: {fileID: 8666475681019313738}
   - component: {fileID: 4227177748466407081}
+  - component: {fileID: 947565029256862243}
   - component: {fileID: 1651894494997209210}
   - component: {fileID: 2120455008}
   - component: {fileID: 2120455007}
@@ -45,7 +46,7 @@ Transform:
   m_Children:
   - {fileID: 1001425377954877808}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1858321033050649062
 SpriteRenderer:
@@ -318,6 +319,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jump: {fileID: 8300000, guid: 4f859ced522613a42b23594aa3e83f78, type: 3}
   hit: {fileID: 8300000, guid: a70b206941e3f1944b4bd24238246fdb, type: 3}
+  collectHealth: {fileID: 0}
+  collectObjective: {fileID: 0}
+--- !u!114 &947565029256862243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858321033050649061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c62ab304a5c55634facae896a9a8603e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterLayer:
+    serializedVersion: 2
+    m_Bits: 16
 --- !u!82 &1651894494997209210
 AudioSource:
   m_ObjectHideFlags: 0
@@ -474,7 +492,7 @@ MonoBehaviour:
   - {x: 0.3125, y: -1, z: 0}
   m_ShapePathHash: -1000367587
   m_Mesh: {fileID: 0}
-  m_InstanceId: 78274
+  m_InstanceId: -3895662
 --- !u!114 &2120455007
 MonoBehaviour:
   m_ObjectHideFlags: 0

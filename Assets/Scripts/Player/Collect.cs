@@ -22,14 +22,15 @@ public class Collect : MonoBehaviour
             switch (collectable.gameObject.name)
             {
                 case "HealthHeart":
-                    if (gameObject.GetComponent<HealthNDeath>().health < 3)
+                    if (GetComponent<HealthNDeath>().health < 3)
                     {
-                        gameObject.GetComponent<HealthNDeath>().health++;
-                        HealthMeter.GetComponent<HealthMeterKeeper>().UpdateHealth(gameObject.GetComponent<HealthNDeath>().health);
-
+                        GetComponent<HealthNDeath>().health++;
+                        HealthMeter.GetComponent<HealthMeterKeeper>().UpdateHealth(GetComponent<HealthNDeath>().health);
+                        GetComponent<AudioPlayer>().PlayAudio("collectHealth");
                     }
                     break;
                 case "Objective":
+                        GetComponent<AudioPlayer>().PlayAudio("collectObjective");
                     StartCoroutine(pickupDelay(2f));
                     break;
             }
