@@ -13,7 +13,7 @@ public class CutsceneWait : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Joystick1Button1)) stateManager.GetComponent<SceneManage>().ChangeScene("NextLevel");
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button1)) stateManager.GetComponent<SceneManage>().ChangeScene("NextLevel");
     }
 
     IEnumerator finishCutscene(float t)
