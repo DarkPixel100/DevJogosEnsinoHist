@@ -4,46 +4,80 @@ using UnityEngine;
 
 public class TeleType : MonoBehaviour
 {
-    public TMPro.TMP_Text m_textMeshPro;
+    public TMPro.TMP_Text _mTextMeshPro;
 
-    private bool next;
+    public int currentPiece;
 
-    void Start()
+    public string[] switchPieces;
+
+    // [HideInInspector]
+    public int[] switchPos;
+
+    public GameObject dialogueManager;
+
+    public GameObject stateManager;
+
+    public void Initiate()
     {
-        m_textMeshPro.ForceMeshUpdate();
-        StartCoroutine(TypeWriter());
+        // _mTextMeshPro.ForceMeshUpdate();
+        switchPieces = _mTextMeshPro.text.Split("<switch>");
+        _mTextMeshPro.text = string.Join("", switchPieces);
+        switchPos = new int[switchPieces.Length];
+        switchPos[0] = switchPieces[0].Length - "<line-indent=1em>".Length;
+        for (int i = 1; i < switchPieces.Length; i++)
+        {
+            switchPos[i] = string.Join("", switchPieces[i].Split("<page>")).Length;
+        }
+        // currentPiece = 0;
+        _mTextMeshPro.maxVisibleCharacters = 0;
     }
 
-    IEnumerator TypeWriter()
+    public void Speak(bool firstLine)
     {
+        if (!firstLine && _mTextMeshPro.maxVisibleCharacters != 0)
+        {
+            _mTextMeshPro.maxVisibleCharacters = 0;
+            _mTextMeshPro.pageToDisplay++;
+        }
+        StartCoroutine(TypeWriter(currentPiece));
+    }
 
-        int totalVisibleCharacters = m_textMeshPro.textInfo.characterCount;
+    public IEnumerator TypeWriter(int pieceNum)
+    {
         int counter = 0;
 
         while (true)
         {
-            int visibleCount = counter % (totalVisibleCharacters + 1);
+            int currentPageLength = _mTextMeshPro.textInfo.pageInfo[_mTextMeshPro.pageToDisplay - 1].lastCharacterIndex - _mTextMeshPro.textInfo.pageInfo[_mTextMeshPro.pageToDisplay - 1].firstCharacterIndex + 1;
 
-            m_textMeshPro.maxVisibleCharacters = visibleCount;
+            int visibleCount = counter % (currentPageLength + 1);
 
-            if (visibleCount >= totalVisibleCharacters)
+            _mTextMeshPro.maxVisibleCharacters = _mTextMeshPro.textInfo.pageInfo[_mTextMeshPro.pageToDisplay - 1].firstCharacterIndex + visibleCount;
+
+            if (visibleCount >= currentPageLength)
             {
-                Debug.Log(m_textMeshPro.textInfo.pageCount);
                 yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
-                if (m_textMeshPro.pageToDisplay < m_textMeshPro.textInfo.pageCount)
+                if (_mTextMeshPro.pageToDisplay < _mTextMeshPro.textInfo.pageCount && visibleCount < switchPos[pieceNum - 1])
                 {
-                    m_textMeshPro.pageToDisplay += 1;
-                    counter = 0;
+                    counter = -1;
+                    _mTextMeshPro.pageToDisplay++;
                 }
                 else
-                    break;
+                {
+                    if (pieceNum < switchPos.Length)
+                    {
+                        dialogueManager.GetComponent<SpeakerSelect>().switchSpeaker();
+                        break;
+                    }
+                    else
+                    {
+                        stateManager.GetComponent<SceneManage>().ChangeScene("NextLevel");
+                    }
+                }
             }
 
-            counter += 1;
-
-            yield return new WaitForSeconds(0.05f);
+            counter++;
+            yield return new WaitForSeconds(0.025f);
         }
-        yield return next = true;
     }
 }
-// selecao de qual texto por id
