@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Dialogue
+  - Faceplate
   layers:
   - Default
   - TransparentFX

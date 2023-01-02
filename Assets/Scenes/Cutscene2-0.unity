@@ -929,7 +929,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ian
+  m_text: Leonardo Da Vinci
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 79208b72936ba8147b3d1a72cf3ca695, type: 2}
   m_sharedMaterial: {fileID: 648133090835756727, guid: 79208b72936ba8147b3d1a72cf3ca695, type: 2}
@@ -956,7 +956,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 79.15
+  m_fontSize: 39.55
   m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1019,7 +1019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   revealTurn: 0
-  realName: Ian
+  realName: Leonardo Da Vinci
 --- !u!1 &1830301289
 GameObject:
   m_ObjectHideFlags: 0
@@ -1194,7 +1194,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '?'
+  m_text: Ian
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 79208b72936ba8147b3d1a72cf3ca695, type: 2}
   m_sharedMaterial: {fileID: 648133090835756727, guid: 79208b72936ba8147b3d1a72cf3ca695, type: 2}
@@ -1284,7 +1284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   revealTurn: 0
-  realName: '?'
+  realName: Ian
 --- !u!1 &2060035266
 GameObject:
   m_ObjectHideFlags: 0

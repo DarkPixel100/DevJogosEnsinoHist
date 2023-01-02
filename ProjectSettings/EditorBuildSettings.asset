@@ -9,48 +9,69 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 19c4752df60ba964989ffc08fcb45fc3
   - enabled: 1
-    path: Assets/Scenes/Cutscene1.unity
+    path: Assets/Scenes/Cutscene1-0.unity
     guid: 3fe2a8f6ed2060547997c862dae02e31
+  - enabled: 1
+    path: Assets/Scenes/Cutscene1-1.unity
+    guid: 7864cd997a6aced43815b7dd2f9cbdef
   - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 749822dd1c3e6e2418b45bdb0ebcdab3
   - enabled: 1
-    path: Assets/Scenes/Cutscene2.unity
-    guid: b5c69b3ab12d5d949b9dcda593a2d202
+    path: Assets/Scenes/Cutscene2-0.unity
+    guid: e7013ec268101984d9f2cf72abc6eb60
+  - enabled: 1
+    path: Assets/Scenes/Cutscene2-1.unity
+    guid: 3ded0ace482bf374bb3cbfb683f53c20
   - enabled: 1
     path: Assets/Scenes/Level2.unity
     guid: e5d1ee6ee6f9488448d5daa3da0cf2ae
   - enabled: 1
-    path: Assets/Scenes/Cutscene3.unity
-    guid: d7d85046eb4921644a1540e6e6f12cd1
+    path: Assets/Scenes/Cutscene3-0.unity
+    guid: 9be41baa07ec5d34dada0877d6ba285e
+  - enabled: 1
+    path: Assets/Scenes/Cutscene3-1.unity
+    guid: 7edd0b5009d618b4db4cec99fad8beb3
   - enabled: 1
     path: Assets/Scenes/Level3.unity
     guid: c4e0471c3e6631845a41daaff2833c19
   - enabled: 1
-    path: Assets/Scenes/Cutscene4.unity
-    guid: 1170171d98e1f7a4581f910909f1cfec
+    path: Assets/Scenes/Cutscene4-0.unity
+    guid: 8e068cb38abecc04090d5bcaa6694c91
+  - enabled: 1
+    path: Assets/Scenes/Cutscene4-1.unity
+    guid: 711bdbdd3754ba34e99a1b4ff074469a
   - enabled: 1
     path: Assets/Scenes/Level4.unity
     guid: 7b94170c5c084544f80a1faa6848eb48
   - enabled: 1
-    path: Assets/Scenes/Cutscene5.unity
-    guid: 3da573a660f5c914fac2af6b3a486eb3
+    path: Assets/Scenes/Cutscene5-0.unity
+    guid: dd51ab11be2cf644d933733970cbda6c
+  - enabled: 1
+    path: Assets/Scenes/Cutscene5-1.unity
+    guid: cd670ace20d4fec40b4b092d2c1f567f
   - enabled: 1
     path: Assets/Scenes/Level5.unity
     guid: e84005c37e1c69f44843209bb4b2a30f
   - enabled: 1
-    path: Assets/Scenes/Cutscene6.unity
-    guid: d774f4ed2c5208546a5acbdbc860cd5a
+    path: Assets/Scenes/Cutscene6-0.unity
+    guid: 61943320a244df74db23a53854699733
+  - enabled: 1
+    path: Assets/Scenes/Cutscene6-1.unity
+    guid: af927a492443be7489b41bee2afcecd9
   - enabled: 1
     path: Assets/Scenes/Level6.unity
     guid: 98e82053ac662db4faf5bd6ee4a85a39
   - enabled: 1
-    path: Assets/Scenes/Cutscene7.unity
-    guid: a840aad4da6f79a4c8441aa7680425c6
+    path: Assets/Scenes/Cutscene7-0.unity
+    guid: f21ddabd1c15a7b429f3d3f2d57e317c
+  - enabled: 1
+    path: Assets/Scenes/Cutscene7-1.unity
+    guid: c7baf7b2f6db83244b5e638e14f94abc
   - enabled: 1
     path: Assets/Scenes/Level7.unity
     guid: 1fe2b8c9f41fa03408ff47b732e8996e
   - enabled: 1
     path: Assets/Scenes/Cutscene8.unity
-    guid: b815875b0ff282040b209cfc8ef9a48f
+    guid: 073b2d6632d60574b8acbacf578a4f40
   m_configObjects: {}

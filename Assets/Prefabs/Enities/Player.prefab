@@ -46,7 +46,7 @@ Transform:
   m_Children:
   - {fileID: 1001425377954877808}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1858321033050649062
 SpriteRenderer:
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  stateManager: {fileID: 7004152620782164465, guid: c3ec4de8a1a6f0a40840e766513800b2, type: 3}
+  sceneManager: {fileID: 7004152620782164465, guid: c3ec4de8a1a6f0a40840e766513800b2, type: 3}
 --- !u!114 &8277863468383607778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,7 +492,7 @@ MonoBehaviour:
   - {x: 0.3125, y: -1, z: 0}
   m_ShapePathHash: -1000367587
   m_Mesh: {fileID: 0}
-  m_InstanceId: -44574
+  m_InstanceId: 41836
 --- !u!114 &2120455007
 MonoBehaviour:
   m_ObjectHideFlags: 0

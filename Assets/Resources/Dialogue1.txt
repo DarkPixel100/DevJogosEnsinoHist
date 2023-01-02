@@ -1,6 +1,0 @@
-1:Você tem certeza disso?
-2:Claro! Essa tecnologia é segura, eu prometo. Além disso, eu não vou influenciar nada, só observar.
-1:Ok, tudo bem... Quanto tempo demora?
-2:Pra mim deve demorar algumas horas, quero ver bastante coisa, mas pra você? Hmm...
-Deve levar só alguns segundos.
-1:Ah, entendi. Te vejo daqui a pouco então... Eu acho.

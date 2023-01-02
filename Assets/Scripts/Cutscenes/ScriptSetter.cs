@@ -19,7 +19,7 @@ public class ScriptSetter : MonoBehaviour
         textBoxes = GameObject.FindGameObjectsWithTag("Dialogue");
         string path = SceneUtility.GetScenePathByBuildIndex(SceneManager.GetActiveScene().buildIndex);
         string scName = path.Substring(0, path.Length - 6).Substring(path.LastIndexOf('/') + 1);
-        scriptAsset = Resources.Load<TextAsset>("Dialogue" + scName[scName.Length - 1]);
+        scriptAsset = Resources.Load<TextAsset>("Dialogue" + scName.Substring(8));
 
         string script = scriptAsset.text;
 
@@ -37,6 +37,5 @@ public class ScriptSetter : MonoBehaviour
         }
         textBoxes[0].GetComponent<TeleType>().Initiate();
         textBoxes[1].GetComponent<TeleType>().Initiate();
-        GetComponent<SpeakerSelect>().StartConversation(textBoxes);
     }
 }

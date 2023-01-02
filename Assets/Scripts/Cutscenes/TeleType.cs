@@ -10,25 +10,24 @@ public class TeleType : MonoBehaviour
 
     public string[] switchPieces;
 
-    // [HideInInspector]
+    [HideInInspector]
     public int[] switchPos;
 
     public GameObject dialogueManager;
 
-    public GameObject stateManager;
+    public GameObject namePlate;
 
     public void Initiate()
     {
-        // _mTextMeshPro.ForceMeshUpdate();
         switchPieces = _mTextMeshPro.text.Split("<switch>");
         _mTextMeshPro.text = string.Join("", switchPieces);
         switchPos = new int[switchPieces.Length];
-        switchPos[0] = switchPieces[0].Length - "<line-indent=1em>".Length;
-        for (int i = 1; i < switchPieces.Length; i++)
+
+        for (int i = 0; i < switchPieces.Length; i++)
         {
-            switchPos[i] = string.Join("", switchPieces[i].Split("<page>")).Length;
+            switchPos[i] = switchPieces[i].Replace("<line-indent=1em>", "").Replace("<page>", "").Length;
         }
-        // currentPiece = 0;
+
         _mTextMeshPro.maxVisibleCharacters = 0;
     }
 
@@ -39,12 +38,14 @@ public class TeleType : MonoBehaviour
             _mTextMeshPro.maxVisibleCharacters = 0;
             _mTextMeshPro.pageToDisplay++;
         }
+
         StartCoroutine(TypeWriter(currentPiece));
     }
 
     public IEnumerator TypeWriter(int pieceNum)
     {
         int counter = 0;
+        int switchFinder = 0;
 
         while (true)
         {
@@ -54,10 +55,18 @@ public class TeleType : MonoBehaviour
 
             _mTextMeshPro.maxVisibleCharacters = _mTextMeshPro.textInfo.pageInfo[_mTextMeshPro.pageToDisplay - 1].firstCharacterIndex + visibleCount;
 
+
             if (visibleCount >= currentPageLength)
             {
+                switchFinder += visibleCount;
                 yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
-                if (_mTextMeshPro.pageToDisplay < _mTextMeshPro.textInfo.pageCount && visibleCount < switchPos[pieceNum - 1])
+
+                if (dialogueManager.GetComponent<Turns>())
+                {
+                    dialogueManager.GetComponent<Turns>().currentTurn++;
+                    dialogueManager.GetComponent<Turns>().check();
+                }
+                if (_mTextMeshPro.pageToDisplay < _mTextMeshPro.textInfo.pageCount && switchFinder < switchPos[pieceNum - 1])
                 {
                     counter = -1;
                     _mTextMeshPro.pageToDisplay++;
@@ -66,18 +75,19 @@ public class TeleType : MonoBehaviour
                 {
                     if (pieceNum < switchPos.Length)
                     {
-                        dialogueManager.GetComponent<SpeakerSelect>().switchSpeaker();
-                        break;
+                        switchFinder = 0;
+                        dialogueManager.GetComponent<SpeakerSelect>().SwitchSpeaker();
                     }
                     else
                     {
-                        stateManager.GetComponent<SceneManage>().ChangeScene("NextLevel");
+                        dialogueManager.GetComponent<Animator>().SetTrigger("End");
                     }
+                    break;
                 }
             }
 
             counter++;
-            yield return new WaitForSeconds(0.025f);
+            yield return new WaitForSeconds(0.02f);
         }
     }
 }

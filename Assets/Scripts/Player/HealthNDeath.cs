@@ -5,7 +5,7 @@ using UnityEngine;
 public class HealthNDeath : MonoBehaviour
 {
     public int health;
-    public GameObject stateManager;
+    public GameObject sceneManager;
 
     void Update()
     {
@@ -27,6 +27,6 @@ public class HealthNDeath : MonoBehaviour
     IEnumerator deathReload(float t)
     {
         yield return new WaitForSeconds(t);
-        stateManager.GetComponent<SceneManage>().ChangeScene("Reload");
+        sceneManager.GetComponent<SceneManage>().ChangeScene("Reload");
     }
 }

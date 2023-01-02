@@ -6,18 +6,25 @@ public class SpeakerSelect : MonoBehaviour
 {
     public int currentSpeaker;
 
-    private GameObject[] boxes;
+    private GameObject[] textBoxes;
 
-    public void StartConversation(GameObject[] objArr)
+    public GameObject sceneManager;
+
+    public void StartConversation()
     {
-        boxes = objArr;
-        boxes[currentSpeaker].GetComponent<TeleType>().Speak(true);
+        textBoxes = GameObject.FindGameObjectsWithTag("Dialogue");
+        textBoxes[currentSpeaker].GetComponent<TeleType>().Speak(true);
     }
 
-    public void switchSpeaker()
+    public void SwitchSpeaker()
     {
         currentSpeaker = (currentSpeaker + 1) % 2;
-        boxes[currentSpeaker].GetComponent<TeleType>().currentPiece++;
-        boxes[currentSpeaker].GetComponent<TeleType>().Speak(false);
+        textBoxes[currentSpeaker].GetComponent<TeleType>().currentPiece++;
+        textBoxes[currentSpeaker].GetComponent<TeleType>().Speak(false);
+    }
+
+    public void EndCutscene()
+    {
+        sceneManager.GetComponent<SceneManage>().ChangeScene("NextLevel");
     }
 }

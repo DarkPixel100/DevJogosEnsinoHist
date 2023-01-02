@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class PlayMenu : MonoBehaviour
 {
-    public GameObject stateManager;
+    public GameObject sceneManager;
     public void NewGame()
     {
-        stateManager.GetComponent<SceneManage>().ChangeScene("NewGame");
+        sceneManager.GetComponent<SceneManage>().ChangeScene("NewGame");
         PlayerPrefs.SetString("CurrentLevel", "Level1");
     }
 
     public void Continue()
     {
-        stateManager.GetComponent<SceneManage>().ChangeScene(PlayerPrefs.GetString("CurrentLevel"));
+        Debug.Log(PlayerPrefs.GetString("CurrentLevel"));
+        sceneManager.GetComponent<SceneManage>().ChangeScene(PlayerPrefs.GetString("CurrentLevel"));
     }
 }

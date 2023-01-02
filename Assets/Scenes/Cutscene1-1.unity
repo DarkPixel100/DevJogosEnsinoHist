@@ -176,7 +176,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 1
-  m_MatchWidthOrHeight: 1
+  m_MatchWidthOrHeight: 0.55
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1283,8 +1283,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3e36ba5f05f2849b449d4f9a184a99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  revealTurn: 0
-  realName: '?'
+  revealTurn: 14
+  realName: Leonardo Da Vinci
 --- !u!1 &2060035266
 GameObject:
   m_ObjectHideFlags: 0
