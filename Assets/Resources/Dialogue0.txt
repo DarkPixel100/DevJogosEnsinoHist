@@ -1,0 +1,13 @@
+1:Você tem certeza disso?
+2:Claro! Essa tecnologia é segura, eu prometo. Além disso, eu não vou influenciar nada, só observar.
+1:Ok, tudo bem... Quanto tempo demora?
+2:Pra mim deve demorar algumas horas, quero ver bastante coisa, mas pra você? Hmm...
+Deve levar só alguns segundos.
+1:Ah, entendi. E você quer ir pra... quando mesmo?
+2:Pra primeira década de 1500, na Itália.
+1:Primeira... década?
+2:É... Voltando tanto tempo assim o relógio perde precisão e eu não consigo especificar o ano, só a década. Mas espero chegar no começo. Quero conhecer o Da Vinci.
+1:E você fala italiano por acaso? Italiano antigo ainda por cima.
+2:Não, mas o relógio traduz automaticamente qualquer conversa, em ambos os sentidos do diálogo.
+1:Meu deus que negócio complicado.
+Mas tá. Te vejo em daqui a pouco então... Eu acho.

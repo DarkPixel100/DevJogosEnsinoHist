@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RevealName : MonoBehaviour
 {
     public int revealTurn;
 
-    public string realName;
+    public Sprite face;
 
     private bool revealed;
 
@@ -14,7 +15,11 @@ public class RevealName : MonoBehaviour
     {
         if(!revealed && currentTurn >= revealTurn)
         {
-            GetComponent<TMPro.TMP_Text>().text = realName;
+            if (face) {
+                DestroyImmediate(GetComponent<TMPro.TMP_Text>());
+                GetComponent<RectTransform>().sizeDelta = new Vector2(190, 220);
+                gameObject.AddComponent<Image>().sprite = face;
+            } else if (GetComponent<TMPro.TMP_Text>().text == "?") GetComponent<TMPro.TMP_Text>().text = "Texture Missing";
             revealed = true;
         }
     }

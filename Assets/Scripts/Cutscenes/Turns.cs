@@ -10,9 +10,10 @@ public class Turns : MonoBehaviour
     void Start()
     {
         facePlates = GameObject.FindGameObjectsWithTag("Faceplate");
+        Check();
     }
 
-    public void check()
+    public void Check()
     {
         facePlates[0].GetComponent<RevealName>().checkReveal(currentTurn);
         facePlates[1].GetComponent<RevealName>().checkReveal(currentTurn);

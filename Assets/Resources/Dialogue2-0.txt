@@ -1,22 +1,41 @@
-1:Você voltou!
-...
-Conseguiu minhas anotações?
-2:Sim... Mas foi bem difícil. Tem muita gente que não gosta do que você faz, viu?
-1:É, eu sei, infelizmente a maioria das pessoas têm medo do novo. Aí acabam não gostando das minhas invenções e estudos.
-Já me disseram muitas vezes pra deixar todo o resto de lado e continuar somente pintando, mas não é o suficiente pra mim.
-2:... Entendo. Realmente, o novo e o desconhecido assusta muita gente, mas eu acho suas invenções incríveis!
-Você realmente é um pintor admirável, mas não deixe de fazer o resto de suas atividades somente por causa da oposição. Eu acredito que elas podem ser grandes contribuições para a sociedade.
-1:Não se preocupe, não tenho planos de seguir as demandas daqueles que não me apoiam.
-2:Que bom.
-1:De qualquer forma, tenho que voltar ao trabalho.
-Muito obrigado, rapaz. Qual o seu nome?
-2:Ah, isso não é importante. Eu também preciso ir, adeus, e boa sorte.
-1:Obrigado, adeus.
+1:...
+Tá, acho que realmente não dá de se acostumar com isso.
+Mas... Onde eu tô?
+Aparentemente na cidade de Torún, na década de 1530.
+Mas quem de importante eu posso encontrar por aqui?..
+[Relógio: A figura histórica que mais se destaca nesse local, atualmente, é Nicolau Copérnico: Astrônomo e matemático polonês, considerado o “Pai da Astronomia Moderna”. Ele criou a Teoria Heliocêntrica, que era contrária às ideias geocêntricas e à geometria aristotélica propagada pela Igreja Católica desde a Idade Média;
+Esses dados foram registrados na memória desse dispositivo, podendo se tornar obsoletos caso ocorram mudanças na linha do tempo.]
+Ah, então agora você me responde? Nem lembrava que tinha essa função.
+Mas tá bom, pelo menos isso é útil.
  
-2:  
-...
-Ok, ufa, essa foi por pouco.
-Quando e onde será que tá a próxima anomalia?
-Bem, configurando a data, parece que tenho que ir para não muito mais no futuro.
-Mas...
-Na Polônia?
+Então a casa de Copérnico deve ser essa... Aqui! Vou bater na porta.
+(batendo)
+2:Quem é? Estou ocupado.
+1:Você perdeu alguma coisa?
+2:(abre a porta)
+Sim, como sabe?
+1:Eu meio que uhmm...
+...Tipo...
+2:Não importa, pode me ajudar a encontrar?
+1:Claro, mas... o que é?
+2:Um modelo.
+1:Modelo?
+2:Sim, um modelo representativo de uma teoria que desenvolvi, se trata de astronomia, não espero que entenda.
+1:Ah, tipo um modelo do siste...
+Deixa pra lá.
+Onde pode estar?
+2:Bem, eu acreditava ter deixado em meus aposentos, acabo trabalhando em casa as vezes, mas existe a possibilidade de tê-lo deixado em meu laboratório.
+1:Você gostaria de ajuda para encontrar? Posso olhar por lá.
+2:Claro... Pode ser, só tome cuidado, é frágil.
+1:Certo, eu vou lá procurar então.
+2:Maravilha! Aqui está a localização do laboratório marcada em um mapa.
+1:Ah sim, entendi.
+Bem, vou indo então.
+2:Cuidado, ele é frágil.
+1:Já entendi, senhor Copérnico...
+-_-
+ 
+2: 
+1:Mais uma vez, nem perto de onde ele disse que estaria.
+Dessa vez parece estar em uma... torre?
+E parte da Igreja. Ai não, vai ser difícil chegar lá e voltar, mas tá, é necessário.
