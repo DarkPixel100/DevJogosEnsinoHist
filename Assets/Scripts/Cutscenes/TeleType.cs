@@ -17,6 +17,14 @@ public class TeleType : MonoBehaviour
 
     public GameObject namePlate;
 
+    private float teleSpeed = 0.02f;
+
+    void Update()
+    {
+        if(Input.GetKey(KeyCode.Space)) teleSpeed = 0.005f;
+        else teleSpeed = 0.02f;
+    }
+
     public void Initiate()
     {
         switchPieces = _mTextMeshPro.text.Split("<switch>");
@@ -64,7 +72,7 @@ public class TeleType : MonoBehaviour
                 if (dialogueManager.GetComponent<Turns>())
                 {
                     dialogueManager.GetComponent<Turns>().currentTurn++;
-                    dialogueManager.GetComponent<Turns>().check();
+                    dialogueManager.GetComponent<Turns>().Check();
                 }
                 if (_mTextMeshPro.pageToDisplay < _mTextMeshPro.textInfo.pageCount && switchFinder < switchPos[pieceNum - 1])
                 {
@@ -87,7 +95,7 @@ public class TeleType : MonoBehaviour
             }
 
             counter++;
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForSeconds(teleSpeed);
         }
     }
 }
