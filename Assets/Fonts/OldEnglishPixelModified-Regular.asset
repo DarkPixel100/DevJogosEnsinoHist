@@ -43,6 +43,21 @@ MonoBehaviour:
     m_StrikethroughThickness: 0
     m_TabWidth: 19
   m_GlyphTable:
+  - m_Index: 1
+    m_Metrics:
+      m_Width: 0
+      m_Height: 0
+      m_HorizontalBearingX: 0
+      m_HorizontalBearingY: 0
+      m_HorizontalAdvance: 19
+    m_GlyphRect:
+      m_X: 166
+      m_Y: 504
+      m_Width: 1
+      m_Height: 1
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
   - m_Index: 2
     m_Metrics:
       m_Width: 16
@@ -1590,6 +1605,10 @@ MonoBehaviour:
     m_ClassDefinitionType: 0
   m_CharacterTable:
   - m_ElementType: 1
+    m_Unicode: 32
+    m_GlyphIndex: 1
+    m_Scale: 1
+  - m_ElementType: 1
     m_Unicode: 33
     m_GlyphIndex: 2
     m_Scale: 1
@@ -2071,6 +2090,10 @@ MonoBehaviour:
     m_Y: 432
     m_Width: 60
     m_Height: 67
+  - m_X: 161
+    m_Y: 499
+    m_Width: 11
+    m_Height: 11
   - m_X: 60
     m_Y: 0
     m_Width: 47
@@ -2436,6 +2459,14 @@ MonoBehaviour:
     m_Y: 432
     m_Width: 28
     m_Height: 3
+  - m_X: 47
+    m_Y: 508
+    m_Width: 114
+    m_Height: 4
+  - m_X: 114
+    m_Y: 505
+    m_Width: 47
+    m_Height: 7
   - m_X: 107
     m_Y: 63
     m_Width: 18
@@ -2517,16 +2548,12 @@ MonoBehaviour:
     m_Width: 50
     m_Height: 26
   - m_X: 47
-    m_Y: 508
+    m_Y: 510
     m_Width: 174
-    m_Height: 4
-  - m_X: 114
-    m_Y: 505
-    m_Width: 107
-    m_Height: 7
-  - m_X: 161
+    m_Height: 2
+  - m_X: 172
     m_Y: 499
-    m_Width: 60
+    m_Width: 49
     m_Height: 13
   - m_X: 180
     m_Y: 346
@@ -2756,7 +2783,7 @@ MonoBehaviour:
     atlasWidth: 512
     atlasHeight: 512
     characterSetSelectionMode: 8
-    characterSequence: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890.:,;(!?)+-*/=_<>~\xE3\xE0\xE1\xE2\xE9\xEA\xED\xF5\xF3\xF4\xFA\xE7\xC3\xC0\xC1\xC2\xC9\xCA\xCD\xD5\xD3\xD4\xDA\xC7"
+    characterSequence: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890.:,;(!?)+-*/=_<>~\xE3\xE0\xE1\xE2\xE9\xEA\xED\xF5\xF3\xF4\xFA\xE7\xC3\xC0\xC1\xC2\xC9\xCA\xCD\xD5\xD3\xD4\xDA\xC7 "
     referencedFontAssetGUID: 79208b72936ba8147b3d1a72cf3ca695
     referencedTextAssetGUID: 4064310df43f98241a7a8f53efbe1a2a
     fontStyle: 0
