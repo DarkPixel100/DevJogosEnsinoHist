@@ -11,17 +11,20 @@ public class SceneManage : MonoBehaviour
         else if (sceneName == "Menu") SceneManager.LoadScene("Menu");
         else if (sceneName == "NewGame")
         {
-            PlayerPrefs.SetString("CurrentLevel", "Cutscene1-0");
-            SceneManager.LoadScene("Cutscene1-0");
+            PlayerPrefs.SetString("CurrentLevel", "Cutscene0");
+            SceneManager.LoadScene("Cutscene0");
         }
-        else if (sceneName == "LevelChooser"){} //Talvez nunca seja usado
+        else if (sceneName == "LevelChooser") { } //Talvez nunca seja usado
         else if (sceneName == "NextLevel")
         {
             int nextIndex = SceneManager.GetActiveScene().buildIndex + 1;
             string path = SceneUtility.GetScenePathByBuildIndex(nextIndex);
             string scName = path.Substring(0, path.Length - 6).Substring(path.LastIndexOf('/') + 1);
-            PlayerPrefs.SetString("CurrentLevel", scName);
-            PlayerPrefs.Save();
+            if (scName != "Credits")
+            {
+                PlayerPrefs.SetString("CurrentLevel", scName);
+                PlayerPrefs.Save();
+            }
             SceneManager.LoadScene(nextIndex);
         }
         else
