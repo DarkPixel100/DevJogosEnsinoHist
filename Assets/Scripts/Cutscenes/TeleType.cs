@@ -21,7 +21,7 @@ public class TeleType : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKey(KeyCode.Space)) teleSpeed = 0.005f;
+        if(Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.Joystick1Button1)) teleSpeed = 0.005f;
         else teleSpeed = 0.02f;
     }
 
@@ -67,7 +67,7 @@ public class TeleType : MonoBehaviour
             if (visibleCount >= currentPageLength)
             {
                 switchFinder += visibleCount;
-                yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+                yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Joystick1Button1));
 
                 if (dialogueManager.GetComponent<Turns>())
                 {

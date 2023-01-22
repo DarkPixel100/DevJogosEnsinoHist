@@ -152,8 +152,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2087734883}
+  m_Children: []
   m_Father: {fileID: 2001070549}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -185,7 +184,7 @@ MonoBehaviour:
   m_text: "Game Designer:\n\nProgramador:\n\nDesigner de personagem e cen\xE1rio:\n\nAnimador:\n\nLevel
     Designer:\n\nTrilha sonora:\n\"Clock is ticking\"\n\"A Dragon Fantasy Battle
     Theme\"\n\"A Knight Arrives\"\n\"Fleeting\"\n\"A Nightingale Sings\"\n\"A village
-    tavern\"\n\"A Long Way From Home\"\n\"A Protostar\"\n\nTesters:\n\n\n\n\n\nCoordenadora
+    tavern\"\n\"A Long Way From Home\"\n\"A Protostar\"\n\nTesters:\n\n\n\n\n\n\nCoordenadora
     do projeto:\n\nVinculado ao projeto:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -263,42 +262,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262113960}
   m_CullTransparentMesh: 1
---- !u!1 &583123904
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 583123905}
-  m_Layer: 5
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &583123905
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 583123904}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1519228683}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1168143082
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,7 +528,7 @@ MonoBehaviour:
     Fontes de Avila\n\nDiego Fontes de Avila\n\n\npor Roald Strauss\npor Robert Shaw\npor
     Robert Shaw\npor Barry van Oudtshoorn\npor Robert Shaw\npor Marko Tica\npor Oliver
     Simpson\npor Sergey Afanasov\n\nArthur Braga Dutra\nEnzo Yenlung dos Santos Hsu\nSofia
-    Loureiro da Cruz Machado\nFernanda Etienne Izzo Ribeiro\nTo add+\n\nCarolina
+    Loureiro da Cruz Machado\nFernanda Etienne Izzo Ribeiro\nPedro Machado\nTo add+\n\nCarolina
     Lopez Israel\n\nDesenvolvimento de Jogos para o Ensino de Hist\xF3ria"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -672,8 +635,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 583123905}
+  m_Children: []
   m_Father: {fileID: 2001070549}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -832,6 +794,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2001070549}
   - component: {fileID: 2001070550}
+  - component: {fileID: 2001070551}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -882,39 +845,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!1 &2087734882
-GameObject:
+--- !u!114 &2001070551
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2087734883}
-  m_Layer: 5
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2087734883
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2087734882}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 262113961}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_GameObject: {fileID: 2001070548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37cd5ac9360c4e44e8409a60b47a3d56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneManager: {fileID: 7004152620782164465, guid: c3ec4de8a1a6f0a40840e766513800b2, type: 3}
