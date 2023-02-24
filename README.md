@@ -7,6 +7,6 @@
 
 ## Links para download
 
->### [DEMO 0.9](./README-Installer_Files/Viagem ao Renascimento DEMO - Instalador.exe)
+[DEMO 0.9](https://github.com/DarkPixel100/DevJogosEnsinoHist/blob/master/README-Installer_Files/Viagem%20ao%20Renascimento%20DEMO%20-%20Instalador.exe?raw=true)
 >
 > Uma versão incompleta do jogo, contendo cerca de metade dos níveis totais.
