@@ -8,4 +8,5 @@
 ## Links para download
 
 >### -DEMO 0.9
-  Uma versão incompleta do jogo, contendo cerca de metade dos níveis totais.
+>
+> Uma versão incompleta do jogo, contendo cerca de metade dos níveis totais.
