@@ -7,6 +7,6 @@
 
 ## Links para download
 
->### -[DEMO 0.9](./README-Installer_Files/Viagem ao Renascimento DEMO - Instalador.exe)
+>### [DEMO 0.9](./README-Installer_Files/Viagem ao Renascimento DEMO - Instalador.exe)
 >
 > Uma versão incompleta do jogo, contendo cerca de metade dos níveis totais.
