@@ -159,7 +159,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -385, y: -150.13968}
-  m_SizeDelta: {x: 750, y: 1267.3813}
+  m_SizeDelta: {x: 755, y: 1267.3813}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &262113962
 MonoBehaviour:
@@ -185,7 +185,7 @@ MonoBehaviour:
     Designer:\n\nTrilha sonora:\n\"Clock is ticking\"\n\"A Dragon Fantasy Battle
     Theme\"\n\"A Knight Arrives\"\n\"Fleeting\"\n\"A Nightingale Sings\"\n\"A village
     tavern\"\n\"A Long Way From Home\"\n\"A Protostar\"\n\nTesters:\n\n\n\n\n\n\nCoordenadora
-    do projeto:\n\nVinculado ao projeto:"
+    do projeto:\n\nVinculado ao projeto:\n\nCriado em:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -212,8 +212,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -367,7 +367,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BackGroundColor: {r: 0.039215688, g: 0.039215688, b: 0.039215688, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -502,7 +502,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 385, y: -150.13968}
-  m_SizeDelta: {x: 750, y: 1267.3813}
+  m_SizeDelta: {x: 755, y: 1267.3813}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1327588350
 MonoBehaviour:
@@ -529,7 +529,8 @@ MonoBehaviour:
     Robert Shaw\npor Barry van Oudtshoorn\npor Robert Shaw\npor Marko Tica\npor Oliver
     Simpson\npor Sergey Afanasov\n\nArthur Braga Dutra\nEnzo Yenlung dos Santos Hsu\nSofia
     Loureiro da Cruz Machado\nFernanda Etienne Izzo Ribeiro\nPedro Machado\nTo add+\n\nCarolina
-    Lopez Israel\n\nDesenvolvimento de Jogos para o Ensino de Hist\xF3ria"
+    Lopez Israel\n\nDesenvolvimento de Jogos para o Ensino de Hist\xF3ria\n\nInstituto
+    Federal de Educa\xE7\xE3o, Ci\xEAncia e Tecnologia do Rio Grande do Sul"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -556,8 +557,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
