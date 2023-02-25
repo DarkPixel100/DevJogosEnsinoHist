@@ -36,7 +36,7 @@ O que?
 1:...
 2:Além disso perdi meu maior compasso e uma de minhas réguas.
 Como vou continuar meus cálculos assim? Ainda mais deixá-los apresentáveis para discussão sem as ferramentas adequadas?
-1:Eu posso procurar por você em algum outro lugar, enquando você olha na sua casa.
+1:Eu posso procurar para você em algum outro lugar, enquando você olha na sua casa.
 2:Certo! Muito obrigado. Qual o seu nome mesmo?
 1:Uhh...
 Karl.
