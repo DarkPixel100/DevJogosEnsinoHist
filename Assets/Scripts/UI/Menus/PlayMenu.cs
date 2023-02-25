@@ -13,7 +13,6 @@ public class PlayMenu : MonoBehaviour
 
     public void Continue()
     {
-        Debug.Log(PlayerPrefs.GetString("CurrentLevel"));
         sceneManager.GetComponent<SceneManage>().ChangeScene(PlayerPrefs.GetString("CurrentLevel"));
     }
 }

@@ -10,11 +10,15 @@ public class SettingsMenu : MonoBehaviour
 
     public Toggle fsToggle;
 
+    public Slider volumeSlider;
+
     public TMPro.TMP_Dropdown resolutionDropdown;
     Resolution[] resolutions;
 
     void Start()
     {
+        volumeSlider.value = PlayerPrefs.GetFloat("GameVolume");
+        audioMixer.SetFloat("Volume", volumeSlider.value);
         fsToggle.isOn = Screen.fullScreen;
         resolutions = Screen.resolutions;
         resolutionDropdown.ClearOptions();
@@ -40,6 +44,7 @@ public class SettingsMenu : MonoBehaviour
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("Volume", volume);
+        PlayerPrefs.SetFloat("GameVolume", volume);
     }
 
     public void SetResolution (int resolutionIndex)
