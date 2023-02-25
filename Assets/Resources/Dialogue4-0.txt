@@ -5,11 +5,11 @@ Ah! Entendi...
 Que específico.
 Mas bem, tenho que achar ele, e devolver o que ele perdeu. Como eu sempre apareço perto da pessoa que eu tô procurando, deve estar por aqui.
 Acho que vou ter que olhar pelas janelas...
- 
+...
 Aqui!
 2:(Procurando algo no chão)
 1:(Batendo na porta) Com licença!
-2:Um momento! Estou procurando meu comprasso.
+2:Um momento! Estou procurando meu compasso.
 1:(Sussurrando) Ele só perdeu um compasso?
 [Relógio: A anomalia em questão é um conjunto de objetos relacionados as suas pesquisas e cálculos sobre as órbitas elípticas dos planetas]
 Ah, enten...
@@ -44,5 +44,5 @@ Karl.
 1:Tá, já vou indo então. Até daqui a pouco.
 2:Até
  
-1: 
+1:...
 E... Igual da última vez, longe de onde ele achava que estava, e parece ter gente guardando a anomalia...

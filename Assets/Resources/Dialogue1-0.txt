@@ -29,8 +29,8 @@ Qual o seu nome?
 2:Precisamente. Muito obrigado rapaz.
  
 1: 
-Ok, pelo que o relógio tá mostrando essas anotações não estão nem perto desse evento. Parecem estar em um lugar aleatório da cidade. Melhor eu ir logo
- 
+Ok, pelo que o relógio tá mostrando essas anotações não estão nem perto desse evento. Parecem estar em um lugar aleatório da cidade. Melhor eu ir logo.
+...
 Hmm... parece que é por aqui.
 Mas o que?!
 Aquelas pessoas parecem estar guardando as anotações. Mas por que?

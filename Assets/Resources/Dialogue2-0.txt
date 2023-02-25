@@ -7,7 +7,7 @@ Mas quem de importante eu posso encontrar por aqui?..
 Esses dados foram registrados na memória desse dispositivo, podendo se tornar obsoletos caso ocorram mudanças na linha do tempo.]
 Ah, então agora você me responde? Nem lembrava que tinha essa função.
 Mas tá bom, pelo menos isso é útil.
- 
+...
 Então a casa de Copérnico deve ser essa... Aqui! Vou bater na porta.
 (batendo)
 2:Quem é? Estou ocupado.
@@ -32,9 +32,8 @@ Onde pode estar?
 1:Ah sim, entendi.
 Bem, vou indo então.
 2:Cuidado, ele é frágil.
-1:Já entendi, senhor Copérnico...
--_-
- 
+1:Já entendi, senhor Copérnico... -_-
+...
 2: 
 1:Mais uma vez, nem perto de onde ele disse que estaria.
 Dessa vez parece estar em uma... torre?
