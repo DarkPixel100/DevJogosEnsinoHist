@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -385, y: -150.13968}
-  m_SizeDelta: {x: 755, y: 1267.3813}
+  m_AnchoredPosition: {x: -327.3582, y: -150.13968}
+  m_SizeDelta: {x: 630, y: 1267.381}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &262113962
 MonoBehaviour:
@@ -184,8 +184,8 @@ MonoBehaviour:
   m_text: "Game Designer:\n\nProgramador:\n\nDesigner de personagem e cen\xE1rio:\n\nAnimador:\n\nLevel
     Designer:\n\nTrilha sonora:\n\"Clock is ticking\"\n\"A Dragon Fantasy Battle
     Theme\"\n\"A Knight Arrives\"\n\"Fleeting\"\n\"A Nightingale Sings\"\n\"A village
-    tavern\"\n\"A Long Way From Home\"\n\"A Protostar\"\n\nTesters:\n\n\n\n\n\n\nCoordenadora
-    do projeto:\n\nVinculado ao projeto:\n\nCriado em:"
+    tavern\"\n\"A Long Way From Home\"\n\"A Protostar\"\n\nTesters:\n\n\n\n\n\nCoordenadora
+    do projeto:\n\nVinculado ao projeto:\n\n\nCriado em:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -501,8 +501,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 385, y: -150.13968}
-  m_SizeDelta: {x: 755, y: 1267.3813}
+  m_AnchoredPosition: {x: 327.3582, y: -150.13968}
+  m_SizeDelta: {x: 630, y: 1267.381}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1327588350
 MonoBehaviour:
@@ -528,7 +528,7 @@ MonoBehaviour:
     Fontes de Avila\n\nDiego Fontes de Avila\n\n\npor Roald Strauss\npor Robert Shaw\npor
     Robert Shaw\npor Barry van Oudtshoorn\npor Robert Shaw\npor Marko Tica\npor Oliver
     Simpson\npor Sergey Afanasov\n\nArthur Braga Dutra\nEnzo Yenlung dos Santos Hsu\nSofia
-    Loureiro da Cruz Machado\nFernanda Etienne Izzo Ribeiro\nPedro Machado\nTo add+\n\nCarolina
+    Loureiro da Cruz Machado\nFernanda Etienne Izzo Ribeiro\nPedro Garcia Machado\n\nCarolina
     Lopez Israel\n\nDesenvolvimento de Jogos para o Ensino de Hist\xF3ria\n\nInstituto
     Federal de Educa\xE7\xE3o, Ci\xEAncia e Tecnologia do Rio Grande do Sul"
   m_isRightToLeft: 0
@@ -731,12 +731,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 16
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
