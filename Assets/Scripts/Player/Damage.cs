@@ -39,7 +39,17 @@ public class Damage : MonoBehaviour
             }
             else
             {
-                GameObject.Destroy(damagingElement.gameObject);
+                damagingElement.gameObject.GetComponent<EnemyParticles>().Explode();
+                if (!damagingElement.gameObject.GetComponent<EnemyMovement>().alternatingWalk)
+                {
+                    damagingElement.gameObject.GetComponent<ThrowAttack>().enabled = false;
+                    damagingElement.gameObject.GetComponent<Animator>().enabled = false;
+                }
+                damagingElement.gameObject.GetComponent<EnemyMovement>().enabled = false;
+                damagingElement.gameObject.GetComponent<Rigidbody2D>().simulated = false;
+                damagingElement.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                damagingElement.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                gameObject.GetComponent<AudioPlayer>().PlayAudio("death");
             }
         }
     }

@@ -8,6 +8,8 @@ public class AudioPlayer : MonoBehaviour
     public AudioClip jump;
     public AudioClip hit;
 
+    public AudioClip death;
+
     public AudioClip collectHealth;
     public AudioClip collectObjective;
     void Start()
@@ -24,6 +26,9 @@ public class AudioPlayer : MonoBehaviour
                 break;
             case "hit":
                 source.clip = hit;
+                break;
+            case "death":
+                source.clip = death;
                 break;
             case "collectHealth":
                 source.clip = collectHealth;

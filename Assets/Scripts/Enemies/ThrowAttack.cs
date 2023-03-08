@@ -33,7 +33,7 @@ public class ThrowAttack : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(t);
-            if (Mathf.Abs(transform.position.x - player.transform.position.x) <= 15)
+            if (Mathf.Abs(transform.position.x - player.transform.position.x) <= 12)
             {
                 GetComponent<Animator>().SetTrigger("Throw");
             }

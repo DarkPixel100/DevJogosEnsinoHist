@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class PlayerParticles : MonoBehaviour
 {
-    public ParticleSystem pSystem;
+    public ParticleSystem jumpParticles;
+    public ParticleSystem expParticles;
 
     public void CreateDust()
     {
-        pSystem.Play();
+        jumpParticles.Play();
+    }
+
+    public void Explode()
+    {
+        expParticles.Play();
     }
 }
