@@ -935,6 +935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   revealTurn: 0
+  vanishTurn: 0
   face: {fileID: 21300000, guid: 81f51309d8d1f3447bea9bdac9bde62f, type: 3}
 --- !u!1 &1572486983
 GameObject:
@@ -1342,6 +1343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   revealTurn: 8
+  vanishTurn: 45
   face: {fileID: 21300000, guid: efea1c0f5be7a0842a8a4ea7a2663505, type: 3}
 --- !u!1 &2060035266
 GameObject:

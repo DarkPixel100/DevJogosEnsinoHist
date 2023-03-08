@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class RevealName : MonoBehaviour
 {
     public int revealTurn;
+    public int vanishTurn;
 
     public Sprite face;
 
@@ -21,6 +22,14 @@ public class RevealName : MonoBehaviour
                 gameObject.AddComponent<Image>().sprite = face;
             } else if (GetComponent<TMPro.TMP_Text>().text == "?") GetComponent<TMPro.TMP_Text>().text = "Texture Missing";
             revealed = true;
+        }
+    }
+
+    public void checkVanish(int currentTurn)
+    {
+        if(vanishTurn != 0 && currentTurn >= vanishTurn)
+        {
+            gameObject.SetActive(false);
         }
     }
 }

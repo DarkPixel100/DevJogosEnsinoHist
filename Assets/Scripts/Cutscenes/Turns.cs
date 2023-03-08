@@ -17,5 +17,7 @@ public class Turns : MonoBehaviour
     {
         facePlates[0].GetComponent<RevealName>().checkReveal(currentTurn);
         facePlates[1].GetComponent<RevealName>().checkReveal(currentTurn);
+        facePlates[0].GetComponent<RevealName>().checkVanish(currentTurn);
+        facePlates[1].GetComponent<RevealName>().checkVanish(currentTurn);
     }
 }
