@@ -1,0 +1,19 @@
+1:...
+2:(batendo na porta) Senhor Newton!
+Encontrei os objetos que estava procurando!
+1:(abrindo a porta) Incrível! Onde você os encontrou?
+2:Eles estavam guardados em uma caixa antiga em um museu perto do centro da cidade.
+1:Que estranho, não lembro de ir lá há um bom tempo. Mas de qualuer forma, obrigado, John.
+2:Eu fico feliz em poder ajudar, senhor Newton.
+1:Claro! Vou examiná-los com cuidado para ver se ainda posso utilizá-los. Mais uma vez, agradeço muito pela sua dedicação em encontrar esses objetos.
+2:Não há de quê, senhor Newton. É uma honra poder contribuir para a história da ciência.
+1:Posso recompensá-lo de alguma forma?
+2:Não é necessário. Ver que esses objetos voltaram para suas mãos já é uma grande recompensa para mim.
+1:Entendo. Bem, então, muito obrigado novamente, John. Eu realmente aprecio o que você fez.
+2:Eu que agradeço a oportunidade de poder contribuir, senhor Newton. Tenha um bom dia.
+1: 
+2:...
+[Relógio: Anomalias neutralizadas e resolvidas, linha do tempo mantida]
+FINALMENTE!
+Agora posso voltar pra casa, e não me preocupar mais com isso.
+Não vou nem perder muito tempo, tenho medo de acontecer algo ruim de novo.

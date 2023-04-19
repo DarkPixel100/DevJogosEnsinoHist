@@ -1,0 +1,20 @@
+1:(Procurando)
+2:(Bate na porta)
+1:Você voltou!
+2:É...
+Aqui estão seus rascunhos.
+1:(Feliz) Ótimo! Agora poderei continuar minha pesquisa.
+2:Acredito que será de grande importância para o futuro da astronomia.
+1:Mesmo?
+2:Claro! Definir o formato das órbitas dos planetas será essencial para a exploração esp...
+1:Como?
+2:Exploração... de novas terras. Usar as estrelas como guias.
+1:Ah... Entendi
+...
+Quer dar uma olhada então?
+1:Pode s... [Relógio: Caminho para a próxima anomalia configurado. Distorção permanente da linha do tempo se aproximando]
+2:O que? Quem disse isso?
+1:Uhh... Não sei.
+(Corre)
+2: 
+1:Ai que saco. Vamo lá então...

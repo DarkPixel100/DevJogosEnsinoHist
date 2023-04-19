@@ -485,6 +485,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &692766065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1077,6 +1078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   revealTurn: 0
+  vanishTurn: 19
   face: {fileID: 21300000, guid: efea1c0f5be7a0842a8a4ea7a2663505, type: 3}
 --- !u!1 &1830301289
 GameObject:
@@ -1342,6 +1344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   revealTurn: 0
+  vanishTurn: 0
   face: {fileID: 21300000, guid: 81f51309d8d1f3447bea9bdac9bde62f, type: 3}
 --- !u!1 &2060035266
 GameObject:

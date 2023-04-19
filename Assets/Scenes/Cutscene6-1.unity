@@ -935,6 +935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   revealTurn: 0
+  vanishTurn: 10
   face: {fileID: 21300000, guid: 88ddab5a141d9a64d8967fec18fd95af, type: 3}
 --- !u!1 &1830301289
 GameObject:
@@ -1116,6 +1117,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1836734533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1342,6 +1344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   revealTurn: 0
+  vanishTurn: 0
   face: {fileID: 21300000, guid: 81f51309d8d1f3447bea9bdac9bde62f, type: 3}
 --- !u!1 &2060035266
 GameObject:

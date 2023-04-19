@@ -1,0 +1,13 @@
+1:(procurando agressivamente) Cadê?!
+2:Desculpe interromper, mas eu acho que tenho o item que você está procurando. É um conjunto de vidrarias pertencente a Francis Bacon, certo? Assumo que seja você.
+1:O quê? Sou eu sim. Como você conseguiu? Onde está?
+2:Eu o encontrei por acaso. Parece que estava perdido em algum lugar por aqui.
+1:Me dê isso agora! É um experimento muito importante para minha pesquisa!
+2:Claro, eu vou entregá-lo a você. Mas antes, você não gostaria de saber como eu o encontrei?
+1:O que importa como você o encontrou? Me dê agora!
+2:(Entregando) Bem, se é tão importante, deveria ter mais cuidado...
+1:Mhm, interessante. Não me diga como fazer o meu trbalho. Mas agora, me dê o experimento.
+2:Aqui está. Espero que seja útil para sua pesquisa.
+1:(Mais calmo) Obrigado... Agora, se me dá licença, tenho muito trabalho a fazer.
+ 
+2:Certo, vamos agora para o próximo... Países Baixos? Ok.

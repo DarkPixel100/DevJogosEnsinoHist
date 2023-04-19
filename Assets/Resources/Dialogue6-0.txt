@@ -1,0 +1,10 @@
+1:Tá, mesma coisa de sempre, encontrar quem quer que seja e ajudar. Falta pouco.
+2:(Procurando em frente a sua casa) Onde posso tê-lo deixado..?
+1:Desculpe, você parece estar confuso. Posso ajudá-lo em alguma coisa?
+2:Obrigado por perguntar, meu amigo. Eu perdi meus manuscritos. Estou tentando recordar onde os coloquei, mas parece que minha memória está falhando.
+1:Que tipo de manuscritos você perdeu? Senhor...
+2:Descartes. René Descartes. E os manuscritos que eu perdi estão em um bloco de notas, estão escritos a mão e têm muitas anotações importantes relacionadas a um livro que estou escrevendo, ele apresenta uma nova forma de fazer ciência. Apelidei-o de "Método Científico". Eu levei o bloco comigo para um lugar e agora não o encontro mais.
+1:Entendi. Talvez eu possa ajudá-lo a procurar. Você se lembra de mais detalhes sobre o local onde os deixou?
+2:Bem, eu estive em vários lugares recentemente, mas acho que os deixei em algum lugar aqui perto. Eles têm uma capa de couro marrom e estão amarrados com um cordão de seda preto.
+1:Ok, vou procurar por eles. Espero encontrar seus manuscritos.
+2:Muito obrigado, meu amigo. Eu ficaria muito agradecido se você pudesse encontrá-los. Desejo-lhe boa sorte em sua busca.
