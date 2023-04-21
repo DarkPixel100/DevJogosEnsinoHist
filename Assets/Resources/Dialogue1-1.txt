@@ -2,14 +2,14 @@
 2:Sim, senhor. Elas estavam dentro de um armário nos fundos do estúdio.
 1:Ah, que estranho, não me lembro de tê-las deixado lá. Mas de qualquer forma, muito obrigado. Essas anotações são de extrema importância.
 2:Fico feliz em poder ajudar.
-1:Por acaso, você teria algum interesse em discutir a arte ou as teorias do Renascimento?
+1:Por acaso, você teria algum interesse em discutir a arte e as minhas teorias?
 2:Sim, senhor. Adoraria ouvir suas ideias e opiniões a respeito.
 1:Muito bem. Para mim, a arte é uma forma de expressão da beleza e da harmonia presentes no mundo natural. Eu busco retratar essas características em meus trabalhos e também explorar a perspectiva e a proporção de forma mais precisa e realista. E você, o que acha disso?
-2 Concordo, senhor. Acredito que a arte tem o poder de transmitir emoções e sentimentos através da beleza e da técnica. Também acho que a precisão e a proporção são importantes para que a obra seja mais realista e agradável aos olhos.
-1:Excelente ponto de vista, meu jovem. E quanto ao Renascimento, o que você acha das mudanças que estamos vendo na sociedade e na arte?
-2:Acho que é uma época empolgante para se estar vivo, senhor. As mudanças no pensamento e na cultura estão abrindo novas possibilidades para a arte e a ciência. Eu fico animado em pensar nas descobertas e obras que serão criadas nesse período.
+2:Concordo, senhor. Acredito que a arte tem o poder de transmitir emoções e sentimentos através da beleza e da técnica. Também acho que a precisão e a proporção são importantes para que a obra seja mais realista e agradável aos olhos.
+1:Excelente ponto de vista, meu jovem. E quanto ao momento atual, o que você acha das mudanças que estamos vendo na sociedade e na arte?
+2:Acho que é uma época empolgante para se estar vivo, senhor. As mudanças no pensamento e na cultura estão abrindo novas possibilidades para a arte e a ciência. Eu fico animado em pensar nas descobertas e obras que serão criadas.
 1:Sem dúvida, meu jovem. Eu também acredito que estamos em uma época de grandes mudanças e oportunidades. Agradeço pela conversa e espero que possamos continuar a discutir sobre esses temas no futuro.
-2:Muito obrigado, senhor. Foi uma honra conversar com o senhor e aprender mais sobre a arte e o Renascimento.
+2:Muito obrigado, senhor. Foi uma honra conversar com o senhor e aprender mais sobre a arte.
 1:Mais uma pergunta, garoto...
 2:..?
 1:Por que você parece tão cansado?
@@ -17,7 +17,7 @@
 Uhh…
 Caí...
 ...
-1: Certo…
+1:Certo…
 Bem, preciso voltar ao trabalho. Até mais, garoto.
 2:Até, foi um prazer conhecê-lo. Boa sorte.
 1: 

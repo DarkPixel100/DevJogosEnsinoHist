@@ -193,6 +193,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1858321033050649064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,6 +264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   sceneManager: {fileID: 7004152620782164465, guid: c3ec4de8a1a6f0a40840e766513800b2, type: 3}
+  cam: {fileID: 8292739152745024808, guid: 9201ac1b0bc381b479df5a4fa3dbc71b, type: 3}
 --- !u!114 &8277863468383607778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,7 +497,10 @@ MonoBehaviour:
   - {x: 0.3125, y: -1, z: 0}
   m_ShapePathHash: -1000367587
   m_Mesh: {fileID: 0}
-  m_InstanceId: 38436
+  m_InstanceId: 27790
+  m_LocalBounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0.4375, y: 1, z: 0}
 --- !u!114 &2120455007
 MonoBehaviour:
   m_ObjectHideFlags: 0

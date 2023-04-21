@@ -9,6 +9,8 @@ public class HealthNDeath : MonoBehaviour
     private bool alive = true;
     public GameObject sceneManager;
 
+    public GameObject cam;
+
     void Update()
     {
         if (alive && health <= 0)
@@ -22,8 +24,11 @@ public class HealthNDeath : MonoBehaviour
         alive = false;
         gameObject.GetComponent<CharBaseMov>().enabled = false;
         gameObject.GetComponent<Rigidbody2D>().simulated = false;
+        gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
+        gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
         gameObject.GetComponent<AudioPlayer>().PlayAudio("death");
+        cam.GetComponent<CameraMovement>().followPlayer = false;
         gameObject.GetComponent<PlayerParticles>().Explode();
         StartCoroutine(deathReload(2f));
     }

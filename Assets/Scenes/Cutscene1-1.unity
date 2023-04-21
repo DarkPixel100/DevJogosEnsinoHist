@@ -199,6 +199,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -754,6 +755,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1061918037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1077,7 +1079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   revealTurn: 0
-  vanishTurn: 14
+  vanishTurn: 23
   face: {fileID: 21300000, guid: 0d26829e26ac2fb4db146f85e2be2867, type: 3}
 --- !u!1 &1830301289
 GameObject:

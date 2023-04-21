@@ -7989,7 +7989,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Vers\xE3o 1.0"
+  m_text: "Vers\xE3o 1.0.1"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 79208b72936ba8147b3d1a72cf3ca695, type: 2}
   m_sharedMaterial: {fileID: 648133090835756727, guid: 79208b72936ba8147b3d1a72cf3ca695, type: 2}
