@@ -13,17 +13,17 @@ public class DoubleJump : MonoBehaviour
 
     void Update()
     {
-        if (GetComponent<CharBaseMov>().IsGrounded())
+        if (GetComponent<CharBaseMov>().IsGrounded()) // Reseta a quantidade de pulos ao cair no chão
         {
             JumpsLeft = NumberOfExtraJumps;
         }
     }
     void FixedUpdate()
     {
-        if (!GetComponent<CharBaseMov>().IsGrounded() && GetComponent<CharBaseMov>().jumpPress && JumpsLeft > 0)
+        if (!GetComponent<CharBaseMov>().IsGrounded() && GetComponent<CharBaseMov>().jumpPress && JumpsLeft > 0) // Se não estiver no chão, e pressionar pulo, tendo 1 ou mais restantes, pula
         {
-            JumpsLeft--;
-            GetComponent<CharBaseMov>().Jump();
+            JumpsLeft--; // Reduz a quantidade restante de pulos
+            GetComponent<CharBaseMov>().Jump(); // Pula
         }
     }
 }

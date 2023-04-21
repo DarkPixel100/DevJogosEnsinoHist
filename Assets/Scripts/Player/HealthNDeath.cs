@@ -17,7 +17,7 @@ public class HealthNDeath : MonoBehaviour
         }
     }
 
-    void Die()
+    void Die() // Desativa todos as funções e parâmetros importantes do personagem
     {
         alive = false;
         gameObject.GetComponent<CharBaseMov>().enabled = false;
@@ -28,7 +28,7 @@ public class HealthNDeath : MonoBehaviour
         StartCoroutine(deathReload(2f));
     }
 
-    IEnumerator deathReload(float t)
+    IEnumerator deathReload(float t) // Recarrega o nível depois de algum tempo t (em segundos)
     {
         yield return new WaitForSeconds(t);
         sceneManager.GetComponent<SceneManage>().ChangeScene("Reload");

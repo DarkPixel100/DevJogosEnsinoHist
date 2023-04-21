@@ -5,13 +5,12 @@ using UnityEngine;
 public class PlayMenu : MonoBehaviour
 {
     public GameObject sceneManager;
-    public void NewGame()
+    public void NewGame() // Botão "Novo Jogo"
     {
         sceneManager.GetComponent<SceneManage>().ChangeScene("NewGame");
-        PlayerPrefs.SetString("CurrentLevel", "Level1");
     }
 
-    public void Continue()
+    public void Continue() // Botão "Continuar"
     {
         sceneManager.GetComponent<SceneManage>().ChangeScene(PlayerPrefs.GetString("CurrentLevel"));
     }

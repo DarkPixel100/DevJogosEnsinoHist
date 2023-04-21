@@ -17,7 +17,7 @@ public class AudioPlayer : MonoBehaviour
         source = GetComponent<AudioSource>();
     }
 
-    public void PlayAudio(string name)
+    public void PlayAudio(string name) // Nomes de diferentes sons e seus clips associados
     {
         switch (name)
         {

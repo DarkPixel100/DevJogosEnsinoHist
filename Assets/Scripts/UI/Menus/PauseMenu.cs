@@ -11,10 +11,9 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     public GameObject optionsMenuUI;
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape)) // Abre ao apertar Esc
         {
             if (!gameIsPaused)
             {
@@ -29,33 +28,33 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
-        pauseMenuUI.SetActive(true);
-        pauseMenuDarken.SetActive(true);
-        Time.timeScale = 0f;
+        pauseMenuUI.SetActive(true); // Ativa o menu
+        pauseMenuDarken.SetActive(true); // Ativa o overlay para escurecer o fundo
+        Time.timeScale = 0f; // Para o tempo do jogo
         gameIsPaused = true;
     }
 
     public void Resume()
     {
-        pauseMenuUI.SetActive(false);
-        pauseMenuDarken.SetActive(false);
-        Time.timeScale = 1f;
+        pauseMenuUI.SetActive(false); // Desativa o menu
+        pauseMenuDarken.SetActive(false); // Desativa o overlay para escurecer o fundo
+        Time.timeScale = 1f; // Volta o tempo do jogo ao normal
         gameIsPaused = false;
     }
 
-    public void Options()
+    public void Options() // Abre o menu "Opções"
     {
         pauseMenuUI.SetActive(false);
         optionsMenuUI.SetActive(true);
     }
 
-    public void ExitOptions()
+    public void ExitOptions() // Volta do menu "Opções"
     {
         pauseMenuUI.SetActive(true);
         optionsMenuUI.SetActive(false);
     }
 
-    public void ReturnToMenu()
+    public void ReturnToMenu() // Volta para o menu principal
     {
         Time.timeScale = 1f;
         sceneManager.GetComponent<SceneManage>().ChangeScene("Menu");

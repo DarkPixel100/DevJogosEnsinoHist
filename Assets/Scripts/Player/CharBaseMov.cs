@@ -77,10 +77,10 @@ public class CharBaseMov : MonoBehaviour
 
         state();
 
-        // GET WALKING DIRECTION
+        // Direção de movimento
         walkDirection = Input.GetAxisRaw("Horizontal");
 
-        // FLIPPING SPRITE DIRECTION
+        // Direção do sprite
         if (walkDirection < 0)
         {
             this.GetComponent<SpriteRenderer>().flipX = true;
@@ -90,7 +90,7 @@ public class CharBaseMov : MonoBehaviour
             this.GetComponent<SpriteRenderer>().flipX = false;
         }
 
-        if (IsGrounded())
+        if (IsGrounded()) // Se estiver no chão, pode pular
         {
             CanJump = true;
         }
@@ -98,7 +98,7 @@ public class CharBaseMov : MonoBehaviour
         {
             CanJump = false;
         }
-        // JUMP BUTTON PRESSING, BUFFERING AND RELEASING
+        // Se apertar o botão enquanto está no chão (ou com pulos restantes, no caso de mais de 1 pulo por vez), pula
         if (Input.GetKeyDown(KeyCode.Joystick1Button1) || Input.GetKeyDown(jumpKey))
         {
             jumpRelease = false;
@@ -107,7 +107,7 @@ public class CharBaseMov : MonoBehaviour
                 jumpPress = true;
             }
         }
-        else if (Input.GetKeyUp(KeyCode.Joystick1Button1) || Input.GetKeyUp(jumpKey))
+        else if (Input.GetKeyUp(KeyCode.Joystick1Button1) || Input.GetKeyUp(jumpKey)) // Soltou o botão
         {
             jumpRelease = true;
             jumpPress = false;
@@ -116,46 +116,48 @@ public class CharBaseMov : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (jumpRelease && rb.velocity.y > 0 && !IsGrounded())
+        if (jumpRelease && rb.velocity.y > 0 && !IsGrounded()) // Se soltou o botão enquanto sobe, é aplicada uma força contrária para parar o movimento mais cedo
         {
-            rb.AddForce(new Vector2(0, -jumpStopForce));
+            rb.AddForce(new Vector2(0, -jumpStopForce)); // Força contrária
         }
         else
         {
             jumpRelease = false;
-            if (jumpPress && CanJump)
+            if (jumpPress && CanJump) // Pode pular antes de necessariamente chegar ao chão
             {
                 Jump();
             }
         }
-        rb.velocity = new Vector2(walkDirection * walkSpeed, Mathf.Clamp(rb.velocity.y, -maxYVelocity, maxYVelocity));
+        rb.velocity = new Vector2(walkDirection * walkSpeed, Mathf.Clamp(rb.velocity.y, -maxYVelocity, maxYVelocity)); // Denota a velocidade horizontal e limita e velocidade vertical
     }
 
-    // GROUND CHECK
+    // Checa o contato com o chão
     public bool IsGrounded()
     {
+        // Colisão com o chão a partir dos pés
         RaycastHit2D feetray = Physics2D.BoxCast(bodyCollider.bounds.center, bodyCollider.bounds.size, 0f, Vector2.down, extraColliderHeight, ground);
         return feetray.collider != null;
     }
     public bool CanBufferJump(float closeGroundDistance)
     {
+        // Distância específica do chão que permite fazer um buffer do potão de pular, para que pule automaticamente quando encostar no chão
         RaycastHit2D floorcheck = Physics2D.Raycast(bodyCollider.bounds.center - new Vector3(0, bodyCollider.bounds.extents.y, 0), Vector2.down, closeGroundDistance, ground);
         return floorcheck.collider != null;
     }
 
-    public void Jump()
+    public void Jump() // Função pular
     {
-        GetComponent<PlayerParticles>().CreateDust();
-        GetComponent<AudioPlayer>().PlayAudio("jump");
-        jumpPress = false;
-        rb.velocity = new Vector2(rb.velocity.x, 0);
-        rb.AddForce(new Vector2(0, jumpForce * 100));
+        GetComponent<PlayerParticles>().CreateDust(); // Cria fumaça ao pular
+        GetComponent<AudioPlayer>().PlayAudio("jump"); // Áudio do pulo
+        jumpPress = false; // Botão não mais recém precionado
+        rb.velocity = new Vector2(rb.velocity.x, 0); // Velocidade vertical zerada
+        rb.AddForce(new Vector2(0, jumpForce * 100)); // Adicionando força do pulo
     }
 
     public void state()
     {
         animator.speed = 1;
-        if (!IsGrounded())
+        if (!IsGrounded()) // Se não está no chão, animação de pular ou cair
         {
             animator.SetBool("slowWalk", false);
             animator.SetBool("fastWalk", false);
@@ -170,14 +172,14 @@ public class CharBaseMov : MonoBehaviour
                 animator.SetBool("launchUp", false);
             }
         }
-        else if (Mathf.Abs(rb.velocity.x) > walkSpeed / 2)
+        else if (Mathf.Abs(rb.velocity.x) > walkSpeed / 2) // Se está correndo, animação de correr
         {
             animator.SetBool("fastWalk", true);
             animator.SetBool("slowWalk", false);
             animator.SetBool("falling", false);
             animator.SetBool("launchUp", false);
         }
-        else if (Mathf.Abs(rb.velocity.x) > 0.01f)
+        else if (Mathf.Abs(rb.velocity.x) > 0.01f) // Se está andando devagar, animação de andar
         {
             animator.speed = Mathf.Max(.7f, Mathf.Abs(rb.velocity.x) / (walkSpeed / 2));
             animator.SetBool("slowWalk", true);
@@ -185,7 +187,7 @@ public class CharBaseMov : MonoBehaviour
             animator.SetBool("falling", false);
             animator.SetBool("launchUp", false);
         }
-        else
+        else // Senão, animação "idle"
         {
             animator.SetBool("slowWalk", false);
             animator.SetBool("fastWalk", false);

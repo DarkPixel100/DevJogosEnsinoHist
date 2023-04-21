@@ -11,15 +11,15 @@ public class ProjectileFunctions : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(destroyProj(destroyTime));
+        StartCoroutine(destroyProj(destroyTime)); // Determina o tempo de destruição do projétil
     }
 
     void Update()
     {
-        transform.Rotate(0, 0, rotationFactor * rotationDirection);
+        transform.Rotate(0, 0, rotationFactor * rotationDirection); // Inicia um movimento de rotação constante
     }
 
-    IEnumerator destroyProj(float t)
+    IEnumerator destroyProj(float t) // Destrói o objeto após um tempo t, em segundos
     {
         yield return new WaitForSeconds(t);
         GameObject.Destroy(gameObject);

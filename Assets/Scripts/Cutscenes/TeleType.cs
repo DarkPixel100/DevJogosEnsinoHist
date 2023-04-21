@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class TeleType : MonoBehaviour
 {
+    // Text object
     public TMPro.TMP_Text _mTextMeshPro;
 
+    // Guarda o "piece" atual (Um "piece" é uma parte do diálogo )
     public int currentPiece;
 
     public string[] switchPieces;

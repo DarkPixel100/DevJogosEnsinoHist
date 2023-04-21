@@ -7,16 +7,17 @@ public class Parallax : MonoBehaviour
     private float length, startPos;
     public Camera cam;
     public float pEffect;
-    // Start is called before the first frame update
+    // Efeito parallax para o background em relação à camera
     void Start()
     {
+        // Determinando posição inicial da câmera e comprimento horizontal do background
         startPos = cam.transform.position.x;
         length = GetComponent<SpriteRenderer>().bounds.size.x;
     }
 
-    // Update is called once per frame
     void Update()
     {
+        // Aplicando efeito e fazendo com que a imagem se repita quando passar de alguma extremidade
         float temp = cam.transform.position.x * (1 - pEffect);
         float dist = cam.transform.position.x * pEffect;
         transform.position = new Vector3(startPos + dist, transform.position.y, transform.position.z);

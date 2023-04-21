@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Turns : MonoBehaviour
 {
+    // Mantém qual é o turno atual
     public int currentTurn = 0;
 
     public GameObject[] facePlates;
@@ -13,6 +14,7 @@ public class Turns : MonoBehaviour
         Check();
     }
 
+    // Verifica se o nome deve ser revelado ou escondido
     public void Check()
     {
         facePlates[0].GetComponent<RevealName>().checkReveal(currentTurn);

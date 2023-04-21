@@ -17,19 +17,19 @@ public class LookAt : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetAxisRaw("Horizontal") != 0)
+        if (Input.GetAxisRaw("Horizontal") != 0) // Só atualiza a direção horiontal quando ela é alterada, senão, mantém a anterior
         {
             lookDir.x = Mathf.RoundToInt(Input.GetAxisRaw("Horizontal"));
         }
         lookDir.y = Mathf.RoundToInt(Input.GetAxisRaw("Vertical"));
-        if (lookDir.y == 0 || !this.GetComponent<CharBaseMov>().IsGrounded())
+        if (lookDir.y == 0 || !this.GetComponent<CharBaseMov>().IsGrounded()) // Zera o contador de tempo segurando para cima ou baixo
         {
             holdDownDuration = 0f;
             holdDownStart = Time.time;
         }
         else
         {
-            holdDownDuration = Time.time - holdDownStart;
+            holdDownDuration = Time.time - holdDownStart; // Pega a duração do tempo que está segurando para cima ou para baixo
         }
     }
 

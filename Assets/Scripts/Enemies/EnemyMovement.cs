@@ -9,7 +9,7 @@ public class EnemyMovement : MonoBehaviour
     [System.NonSerialized]
     public int lookDir = 1;
     private GameObject player;
-    public bool alternatingWalk;
+    public bool alternatingWalk; // define se o inimigo deve ficar parado atirando, ou andando
     [Range(0, 10)]
     public int eMoveSpeed;
     [SerializeField] private LayerMask ground;
@@ -24,7 +24,8 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
-        /*
+        /* Coisas de debug se colisão
+
         Color debugRayColor;
         if (!ShouldTurn())
         {
@@ -40,7 +41,7 @@ public class EnemyMovement : MonoBehaviour
         Debug.DrawRay(bodyCollider.bounds.center, new Vector2(lookDir * (bodyCollider.bounds.extents.x + extraSideColliderDistance), 0), debugRayColor);
         Debug.DrawRay(bodyCollider.bounds.center, new Vector2(0, - (bodyCollider.bounds.extents.y + extraFloorColliderHeight)), debugRayColor);
         */
-        if (lookDir > 0)
+        if (lookDir > 0) // Define a direção que o sprite está virado
         {
             this.GetComponent<SpriteRenderer>().flipX = false;
         }
@@ -48,7 +49,7 @@ public class EnemyMovement : MonoBehaviour
         {
             this.GetComponent<SpriteRenderer>().flipX = true;
         }
-        if (alternatingWalk)
+        if (alternatingWalk) // Configura o inimigo para que fique andando constantemente
         {
             Destroy(GetComponent<ThrowAttack>());
             GetComponent<Animator>().SetBool("ShouldWalk", true);
@@ -65,7 +66,7 @@ public class EnemyMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (alternatingWalk)
+        if (alternatingWalk) // Movimentação do inimigo
         {
             rb.velocity = new Vector3(eMoveSpeed * lookDir, rb.velocity.y, 0);
         }
@@ -74,12 +75,20 @@ public class EnemyMovement : MonoBehaviour
             rb.velocity = Vector3.zero;
         }
     }
-    public bool ShouldTurn()
+    public bool ShouldTurn() // Colisões que definem se o inimigo deve virar para o outro lado ao caminhar
     {
+        // Detecta bordas de plataformas
         RaycastHit2D ledgeray = Physics2D.Raycast(new Vector2(bodyCollider.bounds.center.x, bodyCollider.bounds.center.y - bodyCollider.bounds.extents.y / 2), new Vector2(lookDir, -1), 1, ground);
+
+        // Detecta colisão horiontal na altura da cabeça
         RaycastHit2D siderayTop = Physics2D.Raycast(new Vector2(bodyCollider.bounds.center.x, bodyCollider.bounds.center.y + bodyCollider.bounds.extents.y / 4), new Vector2(lookDir, 0), bodyCollider.bounds.extents.x + extraSideColliderDistance, ground);
+
+        // Detecta colisão horiontal na altura dos pés
         RaycastHit2D siderayBottom = Physics2D.Raycast(new Vector2(bodyCollider.bounds.center.x, bodyCollider.bounds.center.y - bodyCollider.bounds.extents.y / 4), new Vector2(lookDir, 0), bodyCollider.bounds.extents.x + extraSideColliderDistance, ground);
+
+        // Detecta se o inimigo está no chão
         RaycastHit2D feetray = Physics2D.Raycast(bodyCollider.bounds.center, Vector2.down, bodyCollider.bounds.extents.y + extraFloorColliderHeight, ground);
+
         return (ledgeray.collider == null && feetray.collider != null) || (siderayTop.collider != null || siderayBottom.collider != null);
     }
 }

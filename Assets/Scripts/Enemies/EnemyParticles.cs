@@ -8,6 +8,6 @@ public class EnemyParticles : MonoBehaviour
 
     public void Explode()
     {
-        pSystem.Play();
+        pSystem.Play(); // Partículas ao morrer
     }
 }
