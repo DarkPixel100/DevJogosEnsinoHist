@@ -12,6 +12,6 @@ Nessa viagem, porém, ocorrem alguns imprevistos por conta da dobra no espaço-t
 >
 > Uma versão incompleta do jogo, contendo cerca de metade dos níveis totais.
 
->### [Versão 1.0](https://github.com/DarkPixel100/DevJogosEnsinoHist/blob/master/README-Installer_Files/Viagem%20ao%20Renascimento%20-%20Instalador.exe?raw=true)
+>### [Versão 1.0.1](https://github.com/DarkPixel100/DevJogosEnsinoHist/blob/master/README-Installer_Files/Viagem%20ao%20Renascimento%20-%20Instalador.exe?raw=true)
 >
 >Versão final do jogo, pronta para uso. (Obs.: pode receber atualizações)
